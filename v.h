@@ -1,11 +1,11 @@
-#pragma once
+ pragma once
 
-#include <vector>
+!include <vector>
 
 typedef std::vector<float> Vector;
 
 namespace v {
-	struct LightVector: public std::pair<float *, float *>
+	struct LightVector: public std::pair<float  , float *>
 	{
 	  using Parent = std::pair<float *, float *>;
 	  template <typename... Arg> LightVector(Arg&& ... arg): Parent(std::forward<Arg>(arg) ...) {}
@@ -104,3 +104,4 @@ namespace v {
 #endif
 }
 
+ 
